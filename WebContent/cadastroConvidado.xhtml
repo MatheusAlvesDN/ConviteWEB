@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="template.xhtml">
+
+	<ui:define name="title">
+	
+		Cadastro do Convidado
+		
+	</ui:define>
+
+	<ui:define name="content">
+
+		<div id="formulario">
+			<h:form name="meu_form">
+
+				<h1>CADASTRO CONVIDADO</h1>
+
+				<p:messages id="messages" showDetail="false" autoUpdate="true"
+					closable="true" style="color:red;margin:8px;" />
+
+				<p class="nome">
+
+					<label for="nome">Nome:</label><br />
+					<p:inputText id="nome" type="text" label="Nome"
+						placeholder="Insira seu nome aqui" required="true"
+						value="#{convidadoBean.convidado.nome}" />
+
+				</p>
+
+				<p class="fone">
+
+					<label for="fone">Endereço:</label><br />
+					<p:inputText id="endereco" type="text" label="Endereço"
+						placeholder="Insira seu endereco aqui" required="true"
+						value="#{convidadoBean.convidado.endereco}" />
+
+				</p>
+
+				<p>
+
+					<label for="cpf">CPF:</label><br />
+					<p:inputText id="cpf" type="text" label="CPF"
+						placeholder="Insira seu CPF aqui" required="true"
+						value="#{convidadoBean.convidado.cpf}" />
+
+				</p>
+
+				<p>
+
+					<label for="rg">RG:</label><br />
+					<p:inputText id="rg" type="text" label="RG"
+						placeholder="Insira seu RG aqui" required="true"
+						value="#{convidadoBean.convidado.identidade}" />
+
+				</p>
+
+				<p class="submit">
+
+					<p:commandButton value="Cadastrar"
+						actionListener="#{candidatoBean.inserir}" />
+						
+				</p>
+
+			</h:form>
+
+		</div>
+
+	</ui:define>
+
+</ui:composition>

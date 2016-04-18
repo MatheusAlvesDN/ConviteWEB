@@ -1,0 +1,72 @@
+@CHARSET "ISO-8859-1";
+
+*  {
+	margin:2px;
+	padding:0;
+}
+
+html, body {height:100%;}
+
+#pagina{	min-height:100%;
+	position:relative;
+	width:100%;}
+
+body {background-color: #FFFFF0;}
+
+#cab{color: blue;
+max-width: 250px;
+float: left;
+}
+
+#cab2{
+border-left: 1px solid black;
+height: 220px;
+text-align: center;
+margin-left: 172px;
+margin-top: 2px;
+line-height: 200px;
+font-family: monospace;
+font-size: 32px;
+}
+
+#cont {color: blue;
+
+border-top: 1px solid black;
+height: 370px;}
+
+#botoes{
+text-align: center;
+line-height: 400px;
+ }
+
+a:link, a:visited{text-decoration: none; color: black;}
+
+#rod {
+position: absolute;
+bottom: 0;
+width: 99%;
+text-align: center;
+border-top: 1px solid black;
+}
+
+#btnsvot{text-align: center;
+line-height: 400px;
+border-top: 1px solid black;}
+
+#formulario {text-align: center;
+font-family: monospace;
+border-top: 1px solid black;
+}
+
+#confirma{text-align: center;
+font-family: monospace;
+border-top: 1px solid black;}
+
+#contagemvt{
+	padding-top:20px;
+	font-family: monospace;
+	border-top: 1px solid black;}
+	
+#ident {text-align: center;
+font-family: monospace;
+border-top: 1px solid black;}
